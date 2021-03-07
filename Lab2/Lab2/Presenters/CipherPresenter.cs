@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Lab2.Models;
 using Lab2.Views;
-using Lab2.Models;
+using System.Windows.Forms;
 
 namespace Lab2.Presenters
 {

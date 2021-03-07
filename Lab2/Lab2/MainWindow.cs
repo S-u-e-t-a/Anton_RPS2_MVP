@@ -3,6 +3,7 @@ using Lab2.Views;
 using Lab2.Presenters;
 using System;
 using System.IO;
+using System.Linq;
 
 namespace Lab2
 {
@@ -107,6 +108,16 @@ namespace Lab2
             var presenter = new CipherPresenter(this);
             presenter.SaveResult();
             Path = string.Empty;
+        }
+
+        private void InfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var infoWindow = new About();
+            if (!Application.OpenForms.OfType<About>().Any())
+            {
+                infoWindow.Show();
+                infoWindow.Focus();
+            }
         }
     }
 }

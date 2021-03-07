@@ -41,7 +41,7 @@
             this.InputFromFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveInputToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveResToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.InfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxOptions.SuspendLayout();
@@ -144,7 +144,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.справкаToolStripMenuItem,
-            this.файлToolStripMenuItem});
+            this.InfoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(613, 24);
@@ -184,11 +184,12 @@
             this.SaveResToolStripMenuItem.Text = "Сохранить результаты";
             this.SaveResToolStripMenuItem.Click += new System.EventHandler(this.SaveResToolStripMenuItem_Click);
             // 
-            // файлToolStripMenuItem
+            // InfoToolStripMenuItem
             // 
-            this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.файлToolStripMenuItem.Text = "Справка";
+            this.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem";
+            this.InfoToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.InfoToolStripMenuItem.Text = "Справка";
+            this.InfoToolStripMenuItem.Click += new System.EventHandler(this.InfoToolStripMenuItem_Click);
             // 
             // openFileDialog
             // 
@@ -234,7 +235,7 @@
         private System.Windows.Forms.ToolStripMenuItem InputFromFileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveInputToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveResToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem InfoToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
         private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
