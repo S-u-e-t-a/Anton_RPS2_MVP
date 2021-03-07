@@ -54,7 +54,7 @@ namespace Lab2.Presenters
         public void SaveResult()
         {
             var savingRes = new SaveData();
-            savingRes.SaveResults(cipherView.Path, cipherView.InputText, cipherView.ResultText);
+            savingRes.SaveResults(cipherView.Path, cipherView.InputText, cipherView.ResultText, cipherView.CipherMethod);
             MessageBox.Show(@"Результаты сохранены",
                 @"Информация");
         }

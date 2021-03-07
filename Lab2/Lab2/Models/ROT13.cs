@@ -2,13 +2,14 @@
 {
     public class ROT13 : ICipher
     {
+        private const int SmthGoesWrong = -1;
         public string Text { get; set; }
 
         private const string AlphabetEng = @"abcdefghijklmnopqrstuvwxyz";
         private const string AlphabetRus = @"абвгдеёжзийклмнопрстуфхцчшщъыьэюя";
         private bool IsLatin(char letter)
         {
-            if (AlphabetEng.IndexOf(char.ToLower(letter)) == -1)
+            if (AlphabetEng.IndexOf(char.ToLower(letter)) == SmthGoesWrong)
                 return false;
             return true;
         }

@@ -32,6 +32,7 @@ namespace Lab2
         }
 
         public string Path { get; set; }
+        public string CipherMethod { get; set; }
 
         private void ButtonStart_Click_1(object sender, EventArgs e)
         {
@@ -41,24 +42,29 @@ namespace Lab2
                 {
                     var presenter = new CipherPresenter(this);
                     presenter.EncodeAtbash();
+                    CipherMethod = comboBoxCipher.Text;
+
                 }
 
                 if (comboBoxCipher.Text == @"Атбаш" && comboBoxMode.Text == @"Расшифровать")
                 {
                     var presenter = new CipherPresenter(this);
                     presenter.DecodeAtbash();
+                    CipherMethod = comboBoxCipher.Text;
                 }
 
                 if (comboBoxCipher.Text == @"ROT13" && comboBoxMode.Text == @"Зашифровать")
                 {
                     var presenter = new CipherPresenter(this);
                     presenter.EncodeRot13();
+                    CipherMethod = comboBoxCipher.Text;
                 }
 
                 if (comboBoxCipher.Text == @"ROT13" && comboBoxMode.Text == @"Расшифровать")
                 {
                     var presenter = new CipherPresenter(this);
                     presenter.DecodeRot13();
+                    CipherMethod = comboBoxCipher.Text;
                 }
             }
             else if (string.IsNullOrEmpty(InputText))

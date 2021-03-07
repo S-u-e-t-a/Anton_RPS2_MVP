@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Lab2.Models
+﻿namespace Lab2.Models
 {
     public class Atbash : ICipher
     {
+        private const int SmthGoesWrong = -1;
         public string Text { get; set; }
 
         private const string AlphabetEng = @"abcdefghijklmnopqrstuvwxyz";
@@ -34,7 +29,7 @@ namespace Lab2.Models
         }
         private bool IsLatin(char letter)
         {
-            if (AlphabetEng.IndexOf(char.ToLower(letter)) == -1)
+            if (AlphabetEng.IndexOf(char.ToLower(letter)) == SmthGoesWrong)
                 return false;
             return true;
         }
