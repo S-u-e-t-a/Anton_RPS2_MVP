@@ -54,6 +54,7 @@
     </Compile>
     <Compile Include="Models\Atbash.cs" />
     <Compile Include="Models\ROT13.cs" />
+    <Compile Include="Models\SaveData.cs" />
     <Compile Include="Presenters\CipherPresenter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

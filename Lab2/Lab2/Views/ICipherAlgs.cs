@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Lab2.Views
 {
-    interface ICipherAlgs
+    public interface ICipherAlgs
     {
         string InputText { get; set; }
         string ResultText { get; set; }
-
+        string Path { get; set; }
     }
 }

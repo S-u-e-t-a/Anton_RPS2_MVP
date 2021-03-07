@@ -8,8 +8,6 @@ namespace Lab2.Models
 {
     public interface ICipher
     {
-        string Text { get; set; }
-
         string Encode(string text);
         string Decode(string text);
     }
